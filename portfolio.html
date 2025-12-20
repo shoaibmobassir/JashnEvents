@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JASHN Portfolio - View our gallery of corporate events, weddings, government events, and institutional events in Ara, Bhojpur, and Patna.">
+    <title>Portfolio | JASHN Events & Hospitality</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">JASHN</a>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1 class="page-title">Our Portfolio</h1>
+        </div>
+    </section>
+
+    <!-- Portfolio Filters -->
+    <section class="portfolio-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+                <button class="filter-btn" data-filter="weddings">Weddings</button>
+                <button class="filter-btn" data-filter="government">Government & Public</button>
+                <button class="filter-btn" data-filter="institutional">Institutional</button>
+                <button class="filter-btn" data-filter="hospitality">Hospitality</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="portfolio-gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Corporate Events -->
+                <div class="gallery-item" data-category="corporate">
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop" alt="Corporate conference">
+                    <div class="gallery-overlay">
+                        <h3>Corporate Conference</h3>
+                        <span>Corporate Event</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="corporate">
+                    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&h=600&fit=crop" alt="Business seminar">
+                    <div class="gallery-overlay">
+                        <h3>Business Seminar</h3>
+                        <span>Corporate Event</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="corporate">
+                    <img src="https://images.unsplash.com/photo-1543269664-7eef42226a21?w=800&h=600&fit=crop" alt="Corporate gathering">
+                    <div class="gallery-overlay">
+                        <h3>Corporate Gathering</h3>
+                        <span>Corporate Event</span>
+                    </div>
+                </div>
+
+                <!-- Weddings -->
+                <div class="gallery-item" data-category="weddings">
+                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop" alt="Wedding decoration">
+                    <div class="gallery-overlay">
+                        <h3>Elegant Wedding Setup</h3>
+                        <span>Wedding</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="weddings">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop" alt="Wedding celebration">
+                    <div class="gallery-overlay">
+                        <h3>Wedding Celebration</h3>
+                        <span>Wedding</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="weddings">
+                    <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=800&h=600&fit=crop" alt="Wedding venue">
+                    <div class="gallery-overlay">
+                        <h3>Wedding Venue Decoration</h3>
+                        <span>Wedding</span>
+                    </div>
+                </div>
+
+                <!-- Government & Public Events -->
+                <div class="gallery-item" data-category="government">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600&fit=crop" alt="Official ceremony">
+                    <div class="gallery-overlay">
+                        <h3>Official Ceremony</h3>
+                        <span>Government Event</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="government">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=600&fit=crop" alt="Public event">
+                    <div class="gallery-overlay">
+                        <h3>Public Event Setup</h3>
+                        <span>Government Event</span>
+                    </div>
+                </div>
+
+                <!-- Institutional Events -->
+                <div class="gallery-item" data-category="institutional">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop" alt="Educational event">
+                    <div class="gallery-overlay">
+                        <h3>Convocations & Ceremonies</h3>
+                        <span>Institutional Event</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="institutional">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop" alt="Academic seminar">
+                    <div class="gallery-overlay">
+                        <h3>Academic Seminar</h3>
+                        <span>Institutional Event</span>
+                    </div>
+                </div>
+
+                <!-- Hospitality -->
+                <div class="gallery-item" data-category="hospitality">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop" alt="Hospitality service">
+                    <div class="gallery-overlay">
+                        <h3>Guest Hospitality</h3>
+                        <span>Hospitality & Logistics</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="hospitality">
+                    <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&h=600&fit=crop" alt="Catering service">
+                    <div class="gallery-overlay">
+                        <h3>Catering Setup</h3>
+                        <span>Hospitality & Logistics</span>
+                    </div>
+                </div>
+
+                <!-- Additional images -->
+                <div class="gallery-item" data-category="corporate">
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600&fit=crop" alt="Event setup">
+                    <div class="gallery-overlay">
+                        <h3>Event Setup</h3>
+                        <span>Corporate Event</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="weddings">
+                    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&h=600&fit=crop" alt="Wedding arrangement">
+                    <div class="gallery-overlay">
+                        <h3>Elegant Arrangement</h3>
+                        <span>Wedding</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="government">
+                    <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop" alt="Formal event">
+                    <div class="gallery-overlay">
+                        <h3>Formal Event</h3>
+                        <span>Government Event</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="institutional">
+                    <img src="https://images.unsplash.com/photo-1543269664-7eef42226a21?w=800&h=600&fit=crop" alt="Institutional gathering">
+                    <div class="gallery-overlay">
+                        <h3>Institutional Gathering</h3>
+                        <span>Institutional Event</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3 class="footer-logo">JASHN</h3>
+                    <p class="footer-tagline">Events & Hospitality</p>
+                    <p>Crafting thoughtful and timeless events in Ara, Bhojpur, and Patna.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Doodh Katora Colony, Arrah, Bihar 802301</li>
+                        <li><i class="fas fa-phone"></i> +91 9XXXXXXXXX</li>
+                        <li><i class="fas fa-envelope"></i> info@jashnevents.com</li>
+                        <li><i class="fas fa-globe"></i> www.jashnevents.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 JASHN Events & Hospitality Pvt. Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919XXXXXXXXX?text=Hello%20JASHN,%20I%20would%20like%20to%20know%20more%20about%20your%20services" class="whatsapp-button" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

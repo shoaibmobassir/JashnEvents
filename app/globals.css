@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    @apply bg-ivory text-charcoal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+  
+  /* Touch-friendly buttons */
+  button, a {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  
+  /* Better text rendering on mobile */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-block px-6 sm:px-8 py-3 sm:py-4 font-medium text-xs sm:text-sm uppercase tracking-wider transition-all duration-300 touch-manipulation;
+    min-height: 44px; /* Touch target size */
+  }
+  
+  .btn-primary {
+    @apply bg-gold text-charcoal-dark border-2 border-gold hover:bg-transparent hover:text-gold hover:-translate-y-0.5 hover:shadow-lg hover:shadow-gold/30;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent text-ivory border-2 border-ivory hover:bg-ivory hover:text-charcoal-dark hover:-translate-y-0.5;
+  }
+  
+  .btn-outline {
+    @apply bg-transparent text-charcoal border-2 border-charcoal hover:bg-charcoal hover:text-ivory;
+  }
+  
+  .section-title {
+    @apply font-heading text-4xl md:text-5xl lg:text-6xl mb-8 relative inline-block;
+  }
+  
+  .section-title::after {
+    @apply absolute -bottom-2 left-0 w-16 h-1 bg-gold;
+    content: '';
+  }
+  
+  .section-title-center::after {
+    @apply left-1/2 -translate-x-1/2;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
