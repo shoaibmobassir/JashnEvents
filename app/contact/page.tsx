@@ -106,17 +106,17 @@ export default function Contact() {
                 <div>
                   <h3 className="text-xl sm:text-2xl font-heading mb-3 sm:mb-4">Follow Us</h3>
                   <div className="flex gap-3 sm:gap-4">
-                    <a href="#" aria-label="Facebook" className="w-10 h-10 sm:w-12 sm:h-12 bg-ivory-light hover:bg-gold rounded-full flex items-center justify-center text-gold hover:text-charcoal-dark transition-all duration-300 hover:-translate-y-1">
+                    <a href="https://www.facebook.com/people/Jashn-Events/61585186093901/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="w-10 h-10 sm:w-12 sm:h-12 bg-ivory-light hover:bg-gold rounded-full flex items-center justify-center text-gold hover:text-charcoal-dark transition-all duration-300 hover:-translate-y-1">
                       <i className="fab fa-facebook-f text-sm sm:text-base"></i>
                     </a>
-                    <a href="#" aria-label="Instagram" className="w-10 h-10 sm:w-12 sm:h-12 bg-ivory-light hover:bg-gold rounded-full flex items-center justify-center text-gold hover:text-charcoal-dark transition-all duration-300 hover:-translate-y-1">
+                    <a href="https://www.instagram.com/jashn_events_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-10 h-10 sm:w-12 sm:h-12 bg-ivory-light hover:bg-gold rounded-full flex items-center justify-center text-gold hover:text-charcoal-dark transition-all duration-300 hover:-translate-y-1">
                       <i className="fab fa-instagram text-sm sm:text-base"></i>
                     </a>
-                    <a href="#" aria-label="LinkedIn" className="w-10 h-10 sm:w-12 sm:h-12 bg-ivory-light hover:bg-gold rounded-full flex items-center justify-center text-gold hover:text-charcoal-dark transition-all duration-300 hover:-translate-y-1">
+                    <a href="https://www.linkedin.com/company/jashn-events" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-10 h-10 sm:w-12 sm:h-12 bg-ivory-light hover:bg-gold rounded-full flex items-center justify-center text-gold hover:text-charcoal-dark transition-all duration-300 hover:-translate-y-1">
                       <i className="fab fa-linkedin-in text-sm sm:text-base"></i>
                     </a>
-                    <a href="#" aria-label="Twitter" className="w-10 h-10 sm:w-12 sm:h-12 bg-ivory-light hover:bg-gold rounded-full flex items-center justify-center text-gold hover:text-charcoal-dark transition-all duration-300 hover:-translate-y-1">
-                      <i className="fab fa-twitter text-sm sm:text-base"></i>
+                    <a href="https://x.com/Jashn_Events_" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X" className="w-10 h-10 sm:w-12 sm:h-12 bg-ivory-light hover:bg-gold rounded-full flex items-center justify-center text-gold hover:text-charcoal-dark transition-all duration-300 hover:-translate-y-1">
+                      <i className="fab fa-x-twitter text-sm sm:text-base"></i>
                     </a>
                   </div>
                 </div>

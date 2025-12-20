@@ -10,10 +10,10 @@ export default function Footer() {
   ]
 
   const socialLinks = [
-    { icon: 'fab fa-facebook-f', href: '#', label: 'Facebook' },
-    { icon: 'fab fa-instagram', href: '#', label: 'Instagram' },
-    { icon: 'fab fa-linkedin-in', href: '#', label: 'LinkedIn' },
-    { icon: 'fab fa-twitter', href: '#', label: 'Twitter' },
+    { icon: 'fab fa-facebook-f', href: 'https://www.facebook.com/people/Jashn-Events/61585186093901/', label: 'Facebook' },
+    { icon: 'fab fa-instagram', href: 'https://www.instagram.com/jashn_events_/', label: 'Instagram' },
+    { icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/company/jashn-events', label: 'LinkedIn' },
+    { icon: 'fab fa-x-twitter', href: 'https://x.com/Jashn_Events_', label: 'Twitter/X' },
   ]
 
   return (
@@ -77,6 +77,8 @@ export default function Footer() {
                 <a
                   key={social.label}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={social.label}
                   className="w-9 h-9 sm:w-10 sm:h-10 bg-gold/10 hover:bg-gold rounded-full flex items-center justify-center text-gold hover:text-charcoal-dark transition-all duration-300 hover:-translate-y-1"
                 >
