@@ -21,6 +21,17 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'JASHN Events & Hospitality | Premium Event Management',
   description: 'JASHN Events & Hospitality - Crafting thoughtful and timeless events in Ara, Bhojpur, and Patna. Corporate events, weddings, government events, and hospitality services.',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/logo.png', type: 'image/png', sizes: '512x512' },
+      { url: '/logo-192.png', type: 'image/png', sizes: '192x192' },
+      { url: '/logo-32.png', type: 'image/png', sizes: '32x32' },
+    ],
+    apple: [
+      { url: '/logo-180.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
 }
 
 export default function RootLayout({
@@ -33,6 +44,9 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/logo.png" type="image/png" sizes="512x512" />
+        <link rel="apple-touch-icon" href="/logo-180.png" />
       </head>
       <body className="font-body bg-ivory text-charcoal antialiased">
         <Navbar />
