@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isGitHubPages = process.env.GITHUB_PAGES === 'true'
+const useCustomDomain = process.env.USE_CUSTOM_DOMAIN === 'true'
 
 const nextConfig = {
   reactStrictMode: true,
@@ -7,7 +8,9 @@ const nextConfig = {
   // Vercel will use Next.js normally (no output: 'export')
   ...(isGitHubPages && { 
     output: 'export',
-    basePath: '/JashnEvents',
+    // Only use basePath if NOT using custom domain
+    // Custom domains serve from root, so no basePath needed
+    ...(!useCustomDomain && { basePath: '/JashnEvents' }),
   }),
   images: {
     domains: ['images.unsplash.com'],
