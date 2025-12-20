@@ -1,14 +1,17 @@
 /** @type {import('next').NextConfig} */
 const isGitHubPages = process.env.GITHUB_PAGES === 'true'
+const isVercel = process.env.VERCEL === '1'
 
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export',
+  // Only use static export for GitHub Pages, Vercel can use SSR
+  ...(isGitHubPages && { output: 'export' }),
   // Only use basePath for GitHub Pages, not for Vercel
   ...(isGitHubPages && { basePath: '/JashnEvents' }),
   images: {
     domains: ['images.unsplash.com'],
-    unoptimized: true, // Required for static export
+    // Only unoptimize for static export (GitHub Pages)
+    ...(isGitHubPages && { unoptimized: true }),
   },
   trailingSlash: true,
 }
