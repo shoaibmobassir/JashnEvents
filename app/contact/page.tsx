@@ -116,7 +116,7 @@ export default function Contact() {
                       <i className="fab fa-linkedin-in text-sm sm:text-base"></i>
                     </a>
                     <a href="https://x.com/Jashn_Events_" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X" className="w-10 h-10 sm:w-12 sm:h-12 bg-ivory-light hover:bg-gold rounded-full flex items-center justify-center text-gold hover:text-charcoal-dark transition-all duration-300 hover:-translate-y-1">
-                      <i className="fab fa-x text-sm sm:text-base"></i>
+                      <i className="fab fa-x-twitter text-sm sm:text-base"></i>
                     </a>
                   </div>
                 </div>

@@ -13,7 +13,7 @@ export default function Footer() {
     { icon: 'fab fa-facebook-f', href: 'https://www.facebook.com/people/Jashn-Events/61585186093901/', label: 'Facebook' },
     { icon: 'fab fa-instagram', href: 'https://www.instagram.com/jashn_events_/', label: 'Instagram' },
     { icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/company/jashn-events', label: 'LinkedIn' },
-    { icon: 'fab fa-x', href: 'https://x.com/Jashn_Events_', label: 'Twitter/X' },
+    { icon: 'fab fa-x-twitter', href: 'https://x.com/Jashn_Events_', label: 'Twitter/X' },
   ]
 
   return (
