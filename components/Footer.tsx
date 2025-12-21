@@ -56,7 +56,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <i className="fas fa-phone text-gold mr-2 sm:mr-3 flex-shrink-0"></i>
-                <span>+91 7320877403</span>
+                <span>+91 7544827491</span>
               </li>
               <li className="flex items-center">
                 <i className="fas fa-envelope text-gold mr-2 sm:mr-3 flex-shrink-0"></i>

@@ -44,7 +44,7 @@
 2. Add complete business information:
    - Name: JASHN Events & Hospitality Pvt. Ltd.
    - Address: Ramgarhia, Arrah, Bihar 802301
-   - Phone: +91-7320877403
+   - Phone: +91-7544827491
    - Website: https://www.jashnevents.net
    - Business hours
    - Photos of events

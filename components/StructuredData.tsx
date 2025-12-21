@@ -22,7 +22,7 @@ export default function StructuredData() {
       latitude: '25.5627655',
       longitude: '84.6812538',
     },
-    telephone: '+91-7320877403',
+    telephone: '+91-7544827491',
     email: 'jashneventsinfo@gmail.com',
     priceRange: '$$',
     areaServed: [
