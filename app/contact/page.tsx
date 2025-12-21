@@ -68,7 +68,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="text-lg sm:text-xl font-heading mb-1 sm:mb-2">Office</h3>
-                      <p className="text-sm sm:text-base text-gray-600">Doodh Katora Colony, Arrah, Bihar 802301</p>
+                      <p className="text-sm sm:text-base text-gray-600">Ramgarhia, Arrah, Bihar 802301</p>
                     </div>
                   </div>
 
@@ -227,7 +227,7 @@ export default function Contact() {
               </h2>
               <div className="border border-gray-200 overflow-hidden rounded-lg">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.438!2d84.6812538!3d25.5627655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d5f57ac2a3b25%3A0xf07ab00f6d418d3a!2sDoodh%20Katora%20Colony%2C%20Arrah%2C%20Bihar%20802301!5e0!3m2!1sen!2sin!4v1736496000000!5m2!1sen!2sin&output=embed"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.438!2d84.6812538!3d25.5627655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d5f57ac2a3b25%3A0xf07ab00f6d418d3a!2sRamgarhia%2C%20Arrah%2C%20Bihar%20802301!5e0!3m2!1sen!2sin!4v1736496000000!5m2!1sen!2sin&output=embed"
                   width="100%"
                   height="300"
                   style={{ border: 0, minHeight: '300px' }}

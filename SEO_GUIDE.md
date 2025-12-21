@@ -43,7 +43,7 @@
 1. Create/claim your Google Business Profile
 2. Add complete business information:
    - Name: JASHN Events & Hospitality Pvt. Ltd.
-   - Address: Doodh Katora Colony, Arrah, Bihar 802301
+   - Address: Ramgarhia, Arrah, Bihar 802301
    - Phone: +91-7320877403
    - Website: https://www.jashnevents.net
    - Business hours

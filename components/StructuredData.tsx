@@ -11,7 +11,7 @@ export default function StructuredData() {
     description: 'JASHN Events & Hospitality is a professionally managed event management and hospitality company delivering structured, reliable, and elegant event solutions for clients across Bihar. We specialize in corporate events, weddings, government events, institutional events, and hospitality services.',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Doodh Katora Colony',
+      streetAddress: 'Ramgarhia',
       addressLocality: 'Arrah',
       addressRegion: 'Bihar',
       postalCode: '802301',

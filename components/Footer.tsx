@@ -52,7 +52,7 @@ export default function Footer() {
             <ul className="space-y-2 sm:space-y-3 text-ivory-light text-xs sm:text-sm">
               <li className="flex items-start">
                 <i className="fas fa-map-marker-alt text-gold mr-2 sm:mr-3 mt-0.5 sm:mt-1 flex-shrink-0"></i>
-                <span>Doodh Katora Colony, Arrah, Bihar 802301</span>
+                <span>Ramgarhia, Arrah, Bihar 802301</span>
               </li>
               <li className="flex items-center">
                 <i className="fas fa-phone text-gold mr-2 sm:mr-3 flex-shrink-0"></i>
