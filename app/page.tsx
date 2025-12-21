@@ -86,7 +86,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-sm sm:text-base md:text-lg mb-3 sm:mb-4 text-ivory-light max-w-3xl mx-auto px-4"
           >
-            Based in Ara – Bhojpur – Patna, we deliver end-to-end event and hospitality solutions designed to create seamless experiences—planned thoughtfully and executed flawlessly.
+            We deliver end-to-end event and hospitality solutions designed to create seamless experiences—planned thoughtfully and executed flawlessly.
           </motion.p>
           
           <motion.p

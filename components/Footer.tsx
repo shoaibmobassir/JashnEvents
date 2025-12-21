@@ -25,7 +25,7 @@ export default function Footer() {
             <h3 className="text-xl sm:text-2xl font-heading font-bold mb-2">JASHN</h3>
             <p className="text-gold text-xs sm:text-sm uppercase tracking-wider mb-3 sm:mb-4">Events & Hospitality</p>
             <p className="text-ivory-light text-xs sm:text-sm leading-relaxed">
-              Crafting thoughtful and timeless events in Ara, Bhojpur, and Patna.
+              Crafting thoughtful and timeless events across India.
             </p>
           </div>
 
