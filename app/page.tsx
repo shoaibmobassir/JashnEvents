@@ -36,6 +36,7 @@ export default function Home() {
   ]
 
   const features = [
+    '7+ Years of Experience',
     'Professional Planning & Coordination',
     'Transparent Budgeting & Clear Communication',
     'Trusted Vendor Network',
