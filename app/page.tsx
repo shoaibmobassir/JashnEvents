@@ -44,12 +44,12 @@ export default function Home() {
   ]
 
   const portfolioImages = [
-    { src: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop', alt: 'Corporate event', category: 'Corporate Event' },
-    { src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop', alt: 'Wedding decoration', category: 'Wedding Celebration' },
-    { src: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop', alt: 'Formal event', category: 'Formal Gathering' },
-    { src: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600&fit=crop', alt: 'Event setup', category: 'Elegant Setup' },
-    { src: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&h=600&fit=crop', alt: 'Conference', category: 'Conference' },
-    { src: 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=800&h=600&fit=crop', alt: 'Event venue', category: 'Venue Decoration' },
+    { src: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop', alt: 'Corporate event management by JASHN Events in Ara, Patna, Bihar', category: 'Corporate Event' },
+    { src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop', alt: 'Wedding decoration and planning services by JASHN Events in Bihar', category: 'Wedding Celebration' },
+    { src: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop', alt: 'Formal event planning and management in Ara, Patna', category: 'Formal Gathering' },
+    { src: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600&fit=crop', alt: 'Professional event setup and coordination by JASHN Events', category: 'Elegant Setup' },
+    { src: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&h=600&fit=crop', alt: 'Conference and seminar management services in Patna, Bihar', category: 'Conference' },
+    { src: 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=800&h=600&fit=crop', alt: 'Event venue decoration and design by JASHN Events & Hospitality', category: 'Venue Decoration' },
   ]
 
   return (
@@ -135,7 +135,7 @@ export default function Home() {
               <div className="relative h-[300px] sm:h-[400px] md:h-[500px] rounded-lg overflow-hidden group">
                 <Image
                   src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop"
-                  alt="Elegant event setup"
+                  alt="Elegant event setup and decoration by JASHN Events & Hospitality in Ara, Patna, Bihar"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />

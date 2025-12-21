@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
+import StructuredData from '@/components/StructuredData'
 
 const playfair = Playfair_Display({ 
   subsets: ['latin'],
@@ -19,8 +20,79 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'JASHN Events & Hospitality | Premium Event Management',
-  description: 'JASHN Events & Hospitality - Crafting thoughtful and timeless events in Ara, Bhojpur, and Patna. Corporate events, weddings, government events, and hospitality services.',
+  metadataBase: new URL('https://www.jashnevents.net'),
+  title: {
+    default: 'JASHN Events & Hospitality | Premium Event Management in Ara, Patna, Bihar',
+    template: '%s | JASHN Events & Hospitality',
+  },
+  description: 'JASHN Events & Hospitality - Leading event management company in Ara, Bhojpur, and Patna, Bihar. Professional corporate events, weddings, government ceremonies, institutional events, and hospitality services. Thoughtfully planned, beautifully executed.',
+  keywords: [
+    'event management',
+    'event planning',
+    'corporate events',
+    'wedding planning',
+    'event management Ara',
+    'event management Patna',
+    'event management Bihar',
+    'hospitality services',
+    'government events',
+    'institutional events',
+    'event coordination',
+    'JASHN Events',
+    'event management company Bihar',
+    'corporate event planning',
+    'wedding planners Ara',
+    'event organizers Patna',
+  ],
+  authors: [{ name: 'JASHN Events & Hospitality' }],
+  creator: 'JASHN Events & Hospitality Pvt. Ltd.',
+  publisher: 'JASHN Events & Hospitality Pvt. Ltd.',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_IN',
+    url: 'https://www.jashnevents.net',
+    siteName: 'JASHN Events & Hospitality',
+    title: 'JASHN Events & Hospitality | Premium Event Management in Ara, Patna, Bihar',
+    description: 'Leading event management company in Ara, Bhojpur, and Patna, Bihar. Professional corporate events, weddings, government ceremonies, and hospitality services.',
+    images: [
+      {
+        url: '/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'JASHN Events & Hospitality Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'JASHN Events & Hospitality | Premium Event Management',
+    description: 'Leading event management company in Ara, Bhojpur, and Patna, Bihar. Professional event planning and hospitality services.',
+    images: ['/logo.png'],
+    creator: '@Jashn_Events_',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    // Add Google Search Console verification code here when available
+    // google: 'your-verification-code',
+  },
+  alternates: {
+    canonical: 'https://www.jashnevents.net',
+  },
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -49,6 +121,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/logo-180.png" />
       </head>
       <body className="font-body bg-ivory text-charcoal antialiased">
+        <StructuredData />
         <Navbar />
         <main className="min-h-screen">
           {children}

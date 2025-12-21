@@ -11,97 +11,97 @@ export default function Portfolio() {
   const portfolioItems = [
     { 
       src: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop', 
-      alt: 'Corporate conference', 
+      alt: 'Corporate conference management by JASHN Events in Ara, Patna, Bihar', 
       title: 'Corporate Conference', 
       category: 'corporate' 
     },
     { 
       src: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&h=600&fit=crop', 
-      alt: 'Business seminar', 
+      alt: 'Business seminar planning and coordination services in Patna, Bihar', 
       title: 'Business Seminar', 
       category: 'corporate' 
     },
     { 
       src: 'https://images.unsplash.com/photo-1543269664-7eef42226a21?w=800&h=600&fit=crop', 
-      alt: 'Corporate gathering', 
+      alt: 'Corporate gathering event management by JASHN Events & Hospitality', 
       title: 'Corporate Gathering', 
       category: 'corporate' 
     },
     { 
       src: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop', 
-      alt: 'Wedding decoration', 
+      alt: 'Elegant wedding decoration and planning services in Ara, Patna, Bihar', 
       title: 'Elegant Wedding Setup', 
       category: 'weddings' 
     },
     { 
       src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&h=600&fit=crop', 
-      alt: 'Wedding celebration', 
+      alt: 'Wedding celebration management by JASHN Events in Bihar', 
       title: 'Wedding Celebration', 
       category: 'weddings' 
     },
     { 
       src: 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=800&h=600&fit=crop', 
-      alt: 'Wedding venue', 
+      alt: 'Wedding venue decoration and design services in Ara, Patna', 
       title: 'Wedding Venue Decoration', 
       category: 'weddings' 
     },
     { 
       src: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600&fit=crop', 
-      alt: 'Official ceremony', 
+      alt: 'Official ceremony and government event management in Bihar', 
       title: 'Official Ceremony', 
       category: 'government' 
     },
     { 
       src: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&h=600&fit=crop', 
-      alt: 'Public event', 
+      alt: 'Public event planning and coordination by JASHN Events in Patna', 
       title: 'Public Event Setup', 
       category: 'government' 
     },
     { 
       src: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop', 
-      alt: 'Educational event', 
+      alt: 'Educational event and convocation management services in Ara, Bihar', 
       title: 'Convocations & Ceremonies', 
       category: 'institutional' 
     },
     { 
       src: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop', 
-      alt: 'Academic seminar', 
+      alt: 'Academic seminar and institutional event planning in Patna, Bihar', 
       title: 'Academic Seminar', 
       category: 'institutional' 
     },
     { 
       src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&h=600&fit=crop', 
-      alt: 'Hospitality service', 
+      alt: 'Guest hospitality and accommodation services by JASHN Events', 
       title: 'Guest Hospitality', 
       category: 'hospitality' 
     },
     { 
       src: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&h=600&fit=crop', 
-      alt: 'Catering service', 
+      alt: 'Catering setup and food service coordination in Ara, Patna', 
       title: 'Catering Setup', 
       category: 'hospitality' 
     },
     { 
       src: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600&fit=crop', 
-      alt: 'Event setup', 
+      alt: 'Professional event setup and coordination by JASHN Events & Hospitality', 
       title: 'Event Setup', 
       category: 'corporate' 
     },
     { 
       src: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&h=600&fit=crop', 
-      alt: 'Wedding arrangement', 
+      alt: 'Elegant wedding arrangement and decoration services in Bihar', 
       title: 'Elegant Arrangement', 
       category: 'weddings' 
     },
     { 
       src: 'https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop', 
-      alt: 'Formal event', 
+      alt: 'Formal event and government ceremony management in Ara, Patna', 
       title: 'Formal Event', 
       category: 'government' 
     },
     { 
       src: 'https://images.unsplash.com/photo-1543269664-7eef42226a21?w=800&h=600&fit=crop', 
-      alt: 'Institutional gathering', 
+      alt: 'Institutional gathering and educational event planning in Bihar', 
       title: 'Institutional Gathering', 
       category: 'institutional' 
     },

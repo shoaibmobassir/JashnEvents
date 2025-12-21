@@ -103,7 +103,7 @@ export default function Services() {
                   }`}>
                     <Image
                       src={service.image}
-                      alt={service.title}
+                      alt={`${service.title} - JASHN Events & Hospitality in Ara, Patna, Bihar`}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />

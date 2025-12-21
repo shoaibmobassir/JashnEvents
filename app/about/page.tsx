@@ -76,7 +76,7 @@ export default function About() {
               <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] rounded-lg overflow-hidden group">
                 <Image
                   src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&h=1000&fit=crop"
-                  alt="Professional event planning"
+                  alt="Professional event planning and management services by JASHN Events in Ara, Patna, Bihar"
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
