@@ -99,12 +99,15 @@ export const metadata: Metadata = {
       { url: '/favicon.svg', type: 'image/svg+xml' },
       { url: '/favicon-32.png', type: 'image/png', sizes: '32x32' },
       { url: '/favicon-192.png', type: 'image/png', sizes: '192x192' },
-      { url: '/logo.png', type: 'image/png', sizes: '512x512' },
+      { url: '/favicon-512.png', type: 'image/png', sizes: '512x512' },
     ],
     apple: [
       { url: '/favicon-180.png', sizes: '180x180', type: 'image/png' },
+      { url: '/favicon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/favicon-512.png', sizes: '512x512', type: 'image/png' },
     ],
   },
+  manifest: '/manifest.json',
 }
 
 export default function RootLayout({
@@ -116,12 +119,21 @@ export default function RootLayout({
     <html lang="en" className={`${playfair.variable} ${poppins.variable}`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+        <meta name="theme-color" content="#edca65" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="JASHN Events" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
-        <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192" />
-        <link rel="apple-touch-icon" href="/favicon-180.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" />
+        <link rel="apple-touch-icon" sizes="192x192" href="/favicon-192.png" />
+        <link rel="apple-touch-icon" sizes="512x512" href="/favicon-512.png" />
+        <link rel="mask-icon" href="/favicon.svg" color="#edca65" />
       </head>
       <body className="font-body bg-ivory text-charcoal antialiased">
         <StructuredData />
