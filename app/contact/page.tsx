@@ -23,7 +23,11 @@ export default function Contact() {
     setSubmitStatus({ type: null, message: '' })
     
     try {
-      const response = await fetch('/api/contact', {
+      // Google Apps Script endpoint for saving to Google Sheets
+      // This works with static sites (GitHub Pages) and server-side deployments
+      const endpoint = 'https://script.google.com/macros/s/AKfycbzfQ1OS6grEAKPx3Q-Nbnf3bvYIOQEH43rmzzcYJKZWDae-IwjpUEQw43udQlnNcCIJ/exec'
+      
+      const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -31,9 +35,21 @@ export default function Contact() {
         body: JSON.stringify(formData),
       })
 
+      // Check if response is HTML (404 or error page)
+      const contentType = response.headers.get('content-type')
+      if (!contentType || !contentType.includes('application/json')) {
+        const text = await response.text()
+        // If we got HTML, it means the API route doesn't exist (static export)
+        if (text.trim().startsWith('<!') || text.trim().startsWith('<html')) {
+          throw new Error('API endpoint not available. Please configure Google Apps Script for static site deployment.')
+        }
+        throw new Error('Invalid response from server')
+      }
+
       const data = await response.json()
 
-      if (!response.ok) {
+      // Check if response is successful
+      if (!response.ok || (data.success === false)) {
         throw new Error(data.error || 'Failed to submit form')
       }
 
