@@ -27,12 +27,21 @@ export default function Contact() {
       // This works with static sites (GitHub Pages) and server-side deployments
       const endpoint = 'https://script.google.com/macros/s/AKfycbzfQ1OS6grEAKPx3Q-Nbnf3bvYIOQEH43rmzzcYJKZWDae-IwjpUEQw43udQlnNcCIJ/exec'
       
+      // Convert form data to URL-encoded format (works better with Google Apps Script)
+      const formDataEncoded = new URLSearchParams({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        eventType: formData.eventType || '',
+        message: formData.message,
+      }).toString()
+
       const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: JSON.stringify(formData),
+        body: formDataEncoded,
       })
 
       // Check if response is HTML (404 or error page)

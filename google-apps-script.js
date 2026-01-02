@@ -29,8 +29,22 @@ function doPost(e) {
       sheet.appendRow(['Timestamp', 'Name', 'Email', 'Phone', 'Event Type', 'Message']);
     }
     
-    // Parse the POST data
-    const postData = JSON.parse(e.postData.contents);
+    // Parse the POST data - handle both JSON and URL-encoded form data
+    let postData;
+    // URL-encoded form data is available in e.parameter
+    if (e.parameter && Object.keys(e.parameter).length > 0) {
+      postData = e.parameter;
+    } 
+    // JSON data is in e.postData.contents
+    else if (e.postData && e.postData.contents) {
+      try {
+        postData = JSON.parse(e.postData.contents);
+      } catch (parseError) {
+        throw new Error('Invalid JSON data: ' + parseError.toString());
+      }
+    } else {
+      throw new Error('No data received');
+    }
     
     // Validate required fields
     if (!postData.name || !postData.email || !postData.phone || !postData.message) {
@@ -55,7 +69,7 @@ function doPost(e) {
       postData.message
     ]);
     
-    // Return success response
+    // Return success response with CORS headers
     return ContentService
       .createTextOutput(JSON.stringify({
         success: true,
