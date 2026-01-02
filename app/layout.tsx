@@ -96,12 +96,13 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
-      { url: '/logo.png', type: 'image/png' },
-      { url: '/logo-192.png', type: 'image/png', sizes: '192x192' },
-      { url: '/logo-32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon-192.png', type: 'image/png', sizes: '192x192' },
+      { url: '/logo.png', type: 'image/png', sizes: '512x512' },
     ],
     apple: [
-      { url: '/logo-180.png', sizes: '180x180', type: 'image/png' },
+      { url: '/favicon-180.png', sizes: '180x180', type: 'image/png' },
     ],
   },
 }
@@ -117,8 +118,10 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/logo.png" type="image/png" sizes="512x512" />
-        <link rel="apple-touch-icon" href="/logo-180.png" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192" />
+        <link rel="apple-touch-icon" href="/favicon-180.png" />
       </head>
       <body className="font-body bg-ivory text-charcoal antialiased">
         <StructuredData />
