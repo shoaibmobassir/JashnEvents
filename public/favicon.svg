@@ -1,10 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
     </style>
   </defs>
-  <rect width="512" height="512" fill="#000000"/>
-  <text x="256" y="360" font-family="'Playfair Display', serif" font-weight="600" font-size="360" fill="#edca65" text-anchor="middle" dominant-baseline="middle">J</text>
+  <text x="256" y="360" font-family="'Playfair Display', serif" font-weight="bold" font-size="400" fill="#edca65" text-anchor="middle" dominant-baseline="middle">J</text>
 </svg>
 
