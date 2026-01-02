@@ -59,6 +59,10 @@ export default function Footer() {
                 <span>+91 7544827491</span>
               </li>
               <li className="flex items-center">
+                <i className="fas fa-phone text-gold mr-2 sm:mr-3 flex-shrink-0"></i>
+                <span>+91 9155693785</span>
+              </li>
+              <li className="flex items-center">
                 <i className="fas fa-envelope text-gold mr-2 sm:mr-3 flex-shrink-0"></i>
                 <span className="break-all">jashneventsinfo@gmail.com</span>
               </li>
