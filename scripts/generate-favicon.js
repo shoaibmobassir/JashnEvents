@@ -24,13 +24,15 @@ async function generateFavicon(size, outputPath) {
   const canvas = createCanvas(size, size);
   const ctx = canvas.getContext('2d');
 
-  // Transparent background (no fill needed, canvas is transparent by default)
+  // Black background
+  ctx.fillStyle = '#000000';
+  ctx.fillRect(0, 0, size, size);
 
   // Try to use Playfair Display, fallback to system serif
   const fontLoaded = await ensureFont();
-  const fontSize = size * 0.8;
+  const fontSize = size * 0.7;
   const fontFamily = fontLoaded ? 'Playfair Display' : 'serif';
-  ctx.font = `bold ${fontSize}px "${fontFamily}"`;
+  ctx.font = `600 ${fontSize}px "${fontFamily}"`;
   ctx.fillStyle = '#edca65'; // Gold color
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
@@ -62,9 +64,10 @@ if (!fs.existsSync(publicDir)) {
   const fontLoaded = await ensureFont();
   const ico32 = createCanvas(32, 32);
   const ctx32 = ico32.getContext('2d');
-  // Transparent background (no fill needed)
+  ctx32.fillStyle = '#000000';
+  ctx32.fillRect(0, 0, 32, 32);
   const fontFamily = fontLoaded ? 'Playfair Display' : 'serif';
-  ctx32.font = `bold 26px "${fontFamily}"`;
+  ctx32.font = `600 22px "${fontFamily}"`;
   ctx32.fillStyle = '#edca65';
   ctx32.textAlign = 'center';
   ctx32.textBaseline = 'middle';
